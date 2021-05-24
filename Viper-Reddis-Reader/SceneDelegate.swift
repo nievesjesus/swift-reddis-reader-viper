@@ -19,6 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
+    func configureApplication() {
+        let navController = NavigationController()
+        self.window?.rootViewController = navController
+    }
 
 }
 
